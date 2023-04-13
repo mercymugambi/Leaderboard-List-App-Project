@@ -16,7 +16,8 @@
       <h2>Recent scores</h2>
       <button type="button" onclick="refreshScores()">Refresh</button>
     </div>
-
+    <div class="flexo" style="display: flex;">
+    
     <ul id="leaderboard">
       <li class="header">
         <span class="name">Name:</span>
@@ -24,17 +25,18 @@
       </li>
     </ul>
     <form>
-      <fieldset>
-        <legend>Add your score</legend>
-        <div>
-          <input type="text" id="name" placeholder="Your name" name="name" required>
-        </div>
-        <div>
-          <input type="number" id="score" placeholder="Your score" name="score" min="0" max="100" required>
-        </div>
-        <button type="submit">Submit</button>
-      </fieldset>
-    </form>
+        <fieldset>
+          <legend>Add your score</legend>
+          <div>
+            <input type="text" id="name" placeholder="Your name" name="name" required>
+          </div>
+          <div>
+            <input type="number" id="score" placeholder="Your score" name="score" min="0" max="100" required>
+          </div>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
   </main>
   <script src="index.js"></script>
 </body>

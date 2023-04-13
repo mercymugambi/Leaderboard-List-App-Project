@@ -1,3 +1,4 @@
+import './style.css';
 /* eslint-disable no-restricted-syntax */
 // Define leaderboard array of scores
 const leaderboard = [
