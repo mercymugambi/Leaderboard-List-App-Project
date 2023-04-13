@@ -5,6 +5,9 @@ const leaderboard = [
   { name: 'John:', score: 85 },
   { name: 'Jane:', score: 72 },
   { name: 'Bob:', score: 67 },
+  { name: 'ken:', score: 85 },
+  { name: 'kim:', score: 72 },
+  { name: 'jay:', score: 67 },
 ];
 
 // Display leaderboard function
@@ -18,18 +21,6 @@ function displayLeaderboard() {
   // Create leaderboard header
   const headerEl = document.createElement('li');
   headerEl.classList.add('header');
-
-  const nameEl = document.createElement('span');
-  nameEl.classList.add('name');
-  nameEl.innerText = 'Name';
-  headerEl.appendChild(nameEl);
-
-  const scoreEl = document.createElement('span');
-  scoreEl.classList.add('score');
-  scoreEl.innerText = 'Score';
-  headerEl.appendChild(scoreEl);
-
-  leaderboardEl.appendChild(headerEl);
 
   // Loop through each score in leaderboard array and create HTML elements
   for (const score of leaderboard) {
@@ -50,12 +41,4 @@ function displayLeaderboard() {
   }
 }
 
-// Add score function
-function addScore(name, score) {
-  leaderboard.push({ name, score });
-}
-
-// Test display leaderboard and add score functions
-displayLeaderboard();
-addScore('Alice:', 93);
 displayLeaderboard();

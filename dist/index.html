@@ -9,33 +9,29 @@
 <script defer src="/index.bundle.js"></script></head>
 <body>
   <header>
-    <h1>Leaderboard List App</h1>
+    <h1 class="title">Leaderboard</h1>
   </header>
   <main>
-    <div class="top">
-      <h2>Recent scores</h2>
-      <button type="button" onclick="refreshScores()">Refresh</button>
-    </div>
-    <div class="flexo" style="display: flex;">
     
-    <ul id="leaderboard">
-      <li class="header">
-        <span class="name">Name:</span>
-        <span class="score">Score:</span>
-      </li>
-    </ul>
-    <form>
-        <fieldset>
-          <legend>Add your score</legend>
-          <div>
+    <div class="flexo">
+        <div class="top">
+            <div class="top-heading">
+                <h2 class="recentScores">Recent scores</h2>
+                <button type="button" class="btn-refresh">Refresh</button>
+            </div>
+            <ul id="leaderboard">
+                <li class="header">
+                </li>
+            </ul>
+        </div>
+        <form>
+          <h2 class="AddScores">Add your score</h2>
+          <div class="inputs">
             <input type="text" id="name" placeholder="Your name" name="name" required>
-          </div>
-          <div>
             <input type="number" id="score" placeholder="Your score" name="score" min="0" max="100" required>
           </div>
           <button type="submit">Submit</button>
-        </fieldset>
-      </form>
+        </form>
     </div>
   </main>
   <script src="index.js"></script>
