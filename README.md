@@ -94,11 +94,19 @@ In subsequent activities, the app will be enhanced to consume the Leaderboard AP
 
 ### Key Features <a name="key-features"></a>
 
-> Future enhancements to this app could include:
+> The key features of the Leaderboard List App Project include:
 
-- Additional features, such as filtering or sorting the leaderboard list
-- Integration with other APIs or databases
-- Improved styling and user interface design
+- Displaying a leaderboard list: The app should be able to display a list of items in a tabular format, showing each item's name, rank, and score.
+
+- Implementation of ES6 modules: The app should be developed using modern web development techniques such as ES6 modules to make it modular, maintainable, and easy to scale.
+
+- Integration with webpack: Webpack should be used to bundle the app's modules, making it easy to deploy and manage.
+
+- Implementation of filtering and sorting: The app could be enhanced with features that allow users to filter or sort the leaderboard list based on specific criteria such as the score or rank.
+
+- Integration with Leaderboard API: The app could be enhanced to consume the Leaderboard API using JavaScript's async and await functionality. This would enable the app to fetch data dynamically from the server and update the leaderboard list accordingly.
+
+- Improved user interface design: The app could be enhanced with improved styling to make it more visually appealing and easier to use.
 
 <!-- LIVE DEMO -->
 
@@ -174,10 +182,11 @@ github pages
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Below are future features to be added.
+> Future enhancements to this app could include:
 
-- **more_days_features**
-- **Add alerts and time schedule**
+- Additional features, such as filtering or sorting the leaderboard list
+- Integration with other APIs or databases
+- Improved styling and user interface design
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
