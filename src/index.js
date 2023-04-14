@@ -1,44 +1,53 @@
 import './style.css';
-/* eslint-disable no-restricted-syntax */
-// Define leaderboard array of scores
-const leaderboard = [
-  { name: 'John:', score: 85 },
-  { name: 'Jane:', score: 72 },
-  { name: 'Bob:', score: 67 },
-  { name: 'ken:', score: 85 },
-  { name: 'kim:', score: 72 },
-  { name: 'jay:', score: 67 },
-];
+import addScore from './modules/addScore';
+import refreshScore from './modules/refreshScore';
+import displayScore from './modules/displayScore';
 
-// Display leaderboard function
-function displayLeaderboard() {
-  // Get leaderboard HTML element
-  const leaderboardEl = document.getElementById('leaderboard');
+addScore();
+refreshScore();
+displayScore();
 
-  // Clear existing leaderboard HTML
-  leaderboardEl.innerHTML = '';
+// import './style.css';
+// /* eslint-disable no-restricted-syntax */
+// // Define leaderboard array of scores
+// const leaderboard = [
+//   { name: 'John:', score: 85 },
+//   { name: 'Jane:', score: 72 },
+//   { name: 'Bob:', score: 67 },
+//   { name: 'ken:', score: 85 },
+//   { name: 'kim:', score: 72 },
+//   { name: 'jay:', score: 67 },
+// ];
 
-  // Create leaderboard header
-  const headerEl = document.createElement('li');
-  headerEl.classList.add('header');
+// // Display leaderboard function
+// function displayLeaderboard() {
+//   // Get leaderboard HTML element
+//   const leaderboardEl = document.getElementById('leaderboard');
 
-  // Loop through each score in leaderboard array and create HTML elements
-  for (const score of leaderboard) {
-    const scoreEl = document.createElement('li');
-    scoreEl.classList.add('score');
+//   // Clear existing leaderboard HTML
+//   leaderboardEl.innerHTML = '';
 
-    const nameEl = document.createElement('span');
-    nameEl.classList.add('name');
-    nameEl.innerText = score.name;
-    scoreEl.appendChild(nameEl);
+//   // Create leaderboard header
+//   const headerEl = document.createElement('li');
+//   headerEl.classList.add('header');
 
-    const valueEl = document.createElement('span');
-    valueEl.classList.add('score');
-    valueEl.innerText = score.score;
-    scoreEl.appendChild(valueEl);
+//   // Loop through each score in leaderboard array and create HTML elements
+//   for (const score of leaderboard) {
+//     const scoreEl = document.createElement('li');
+//     scoreEl.classList.add('score');
 
-    leaderboardEl.appendChild(scoreEl);
-  }
-}
+//     const nameEl = document.createElement('span');
+//     nameEl.classList.add('name');
+//     nameEl.innerText = score.name;
+//     scoreEl.appendChild(nameEl);
 
-displayLeaderboard();
+//     const valueEl = document.createElement('span');
+//     valueEl.classList.add('score');
+//     valueEl.innerText = score.score;
+//     scoreEl.appendChild(valueEl);
+
+//     leaderboardEl.appendChild(scoreEl);
+//   }
+// }
+
+// displayLeaderboard();
