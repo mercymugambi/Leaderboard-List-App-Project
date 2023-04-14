@@ -23,7 +23,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: auto;
   position: relative;
   margin: 0 15%;
 }
@@ -88,7 +87,7 @@ ul {
   width: 100%;
 }
 
-.header {
+.scoreList {
   display: flex;
 
   /* justify-content: space-between; */

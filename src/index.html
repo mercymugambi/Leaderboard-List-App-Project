@@ -19,16 +19,16 @@
                 <h2 class="recentScores">Recent scores</h2>
                 <button type="button" class="btn-refresh">Refresh</button>
             </div>
-            <ul id="leaderboard">
-                <li class="header">
-                </li>
+            <div id="leaderboard">
+                <ul class="scoresList">
+                </ul>
             </ul>
         </div>
-        <form>
+        <form class="scoreForm">
           <h2 class="AddScores">Add your score</h2>
           <div class="inputs">
-            <input type="text" id="name" placeholder="Your name" name="name" required>
-            <input type="number" id="score" placeholder="Your score" name="score" min="0" max="100" required>
+            <input type="text" id="name" class="score-input" placeholder="Your name" name="name" required>
+            <input type="number" id="score" class="score-input" placeholder="Your score" name="score" min="0" max="100" required>
           </div>
           <button type="submit">Submit</button>
         </form>
